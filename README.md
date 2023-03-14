@@ -1,12 +1,12 @@
 # 腾讯云信令管理示例 Demo
-这个 Demo 注意展示如何集成使用[腾讯云信令 SDK](https://cloud.tencent.com/document/product/269/86893) 。
+这个 Demo 注意展示如何集成使用 [腾讯云信令 SDK](https://cloud.tencent.com/document/product/269/86893) 。
 
 主要展示信令管理管理的基本功能，包含以下部分
 
 - 登录和登出 [login](https://web.sdk.qcloud.com/component/tsignaling/doc/zh-cn/TSignaling.html#login) 、[logout](https://web.sdk.qcloud.com/component/tsignaling/doc/zh-cn/TSignaling.html#logout)
 - 加入退出群组 [joinGroup](https://web.sdk.qcloud.com/component/tsignaling/doc/zh-cn/TSignaling.html#joinGroup) 、 [quitGroup](https://web.sdk.qcloud.com/component/tsignaling/doc/zh-cn/TSignaling.html#quitGroup)
 - 发送邀请、取消邀请、接受对方邀请和拒绝对方邀请 [invite](https://web.sdk.qcloud.com/component/tsignaling/doc/zh-cn/TSignaling.html#invite) 、[cancel](https://web.sdk.qcloud.com/component/tsignaling/doc/zh-cn/TSignaling.html#cancel) 、[accept](https://web.sdk.qcloud.com/component/tsignaling/doc/zh-cn/TSignaling.html#accept) 和 [reject](https://web.sdk.qcloud.com/component/tsignaling/doc/zh-cn/TSignaling.html#reject)
-- 订阅对端发起邀请、对端取消邀请、对端接受邀请、对端拒绝邀请和对端邀请超时事件 [NEW_INVITATION_RECEIVED](https://web.sdk.qcloud.com/component/tsignaling/doc/zh-cn/module-EVENT.html#.NEW_INVITATION_RECEIVED)、 [INVITATION_CANCELLED](https://web.sdk.qcloud.com/component/tsignaling/doc/zh-cn/module-EVENT.html#.INVITATION_CANCELLED) 、 [INVITEE_ACCEPTED](https://web.sdk.qcloud.com/component/tsignaling/doc/zh-cn/module-EVENT.html#.INVITEE_ACCEPTED)) 、 [INVITEE_REJECTED](https://web.sdk.qcloud.com/component/tsignaling/doc/zh-cn/module-EVENT.html#.INVITEE_REJECTED)) 和 [INVITATION_TIMEOUT](https://web.sdk.qcloud.com/component/tsignaling/doc/zh-cn/module-EVENT.html#.INVITATION_TIMEOUT)
+- 订阅对端发起邀请、对端取消邀请、对端接受邀请、对端拒绝邀请和对端邀请超时事件 [NEW_INVITATION_RECEIVED](https://web.sdk.qcloud.com/component/tsignaling/doc/zh-cn/module-EVENT.html#.NEW_INVITATION_RECEIVED) 、 [INVITATION_CANCELLED](https://web.sdk.qcloud.com/component/tsignaling/doc/zh-cn/module-EVENT.html#.INVITATION_CANCELLED) 、 [INVITEE_ACCEPTED](https://web.sdk.qcloud.com/component/tsignaling/doc/zh-cn/module-EVENT.html#.INVITEE_ACCEPTED) 、 [INVITEE_REJECTED](https://web.sdk.qcloud.com/component/tsignaling/doc/zh-cn/module-EVENT.html#.INVITEE_REJECTED) 和 [INVITATION_TIMEOUT](https://web.sdk.qcloud.com/component/tsignaling/doc/zh-cn/module-EVENT.html#.INVITATION_TIMEOUT)
 
 ## 环境准备
 
@@ -39,3 +39,9 @@ SDKAppID 是腾讯云 IM 服务区分客户帐号的唯一标识。我们建议�
 
 6. userB 不处理 userA 发送的信令邀请, userA 和 userB 分别收到信令超时
    ![](https://qcloudimg.tencent-cloud.cn/raw/c4623326da3ae64cf0c939da95ec173a.png)
+
+## 相关文档
+* [接入文档](https://cloud.tencent.com/document/product/269/86893)
+* [TSignaling API 手册](https://web.sdk.qcloud.com/component/tsignaling/doc/zh-cn/TSignaling.html)
+* [TSignaling npm](https://www.npmjs.com/package/tsignaling)
+* [tim npm](https://www.npmjs.com/package/tim-js-sdk)
