@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tsignaling demo</title>
+    <style>
+        .content {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        .signal-basic-info, .sender-section, .receive-item {
+            display: flex;
+            margin-bottom: 30px;
+            flex-direction: column;
+        }
+        .item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .item lable, .item button {
+            margin-right: 10px;
+        }
+        .section-title {
+            font-size: 30px;
+            margin: 15px 0;
+        }
+        #userStatus {
+            margin-left: 10px;
+            color: red;
+        }
+        .receive-btn {
+            display: flex;
+            flex-direction: row;
+            margint-top: 5px;
+        }
+        .receive-section .accept-btn {
+            margin-right: 10px;
+        }
+    </style>
+    <script src="js/lib-generate-test-usersig.min.js"></script>
+    <script src="js/tim-js.js"></script>
+    <script src="js/tsignaling-js.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div class="content">
+        <div class="signal-basic-info">
+            <div class="item user-info-item">
+                <lable>用户 userID:</lable>
+                <input id="userIDInput" placeholder="userID"></input>
+                <div id="userStatus"></div>
+            </div>
+            <div class="item">
+                <button id="loginBtn">登录</button>
+                <button id="logoutBtn">登出</button>
+            </div>
+        </div>
+        <div class="sender-section">
+            <div class="section-title">信令发送区域</div>
+            <div class="item remote-user-info-item">
+                <lable>远端 userID:</lable>
+                <input id="remoteUserIDInput" placeholder="remoteUserID"></input>
+            </div>
+            <div class="item">
+                <lable> 信令消息内容: </lable>
+                <textarea id="signalData"></textarea>
+            </div>
+            <div class="item">
+                <button id="inviteBtn">发送(invite)</button>
+            </div>
+        </div>
+        <div class="receive-section">
+            <div class="section-title">信令接收区域</div>
+        </div>
+    </div>
+</body>
+</html>
